@@ -8,7 +8,7 @@ Title ===========
 function spinWords(string){
     let strArr = string.split(" ")
     let res = []
-    let a = strArr.map((el) => el.length >= 5 ? res.push(el.split("").reverse().join("")): res.push(el))
+    strArr.map((el) => el.length >= 5 ? res.push(el.split("").reverse().join("")): res.push(el))
     return res.join(" ")
   }
               
